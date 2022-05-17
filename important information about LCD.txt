@@ -1,0 +1,27 @@
+/* steps to LCD interface
+	 1- knowing information about LCD pins
+   2- connections
+	 3- enable clock for used ports
+	 4- configure used ports pins
+	 5- select mode of LCD
+	 6- if lcd was already displaying text remove it
+	 7- make function to display data
+*/
+
+/* information about LCD pins
+				D0-D7  are used  for enter data or commands
+				RS,RW,E are are used for control
+				The values of D0-D7 are entered LCD at  falling of E  (when E become 0 after being 1)
+				RW (0) means LCD is used to be written on it only
+				RS --->(1) means LCD is receiving commands
+				   --->(0) means LCD is receiving Data
+*/
+
+
+/*
+		homePosition (0,0)
+		cursor is shifted to right after writng by default
+		cursor is by blinking default
+		cursor off means cursor disappear 
+		cursor on  means cursor appear as  '_'
+*/
