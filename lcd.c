@@ -7,12 +7,12 @@
 void LCD_init(void)
 {
 	//step1 enable clock of ports we will use and waiting util execution
-	SYSCTL_RCGCGPIO_R |= 0x03; // ENABLE CLOCK FOR PORTA , PORTB 
-	while( (SYSCTL_PRGPIO_R & 0X03) != 0X03);			// waiting until execution of enabling clock
+	SYSCTL_RCGCGPIO_R |= 0x03;                   // ENABLE CLOCK FOR PORTA , PORTB 
+	while( (SYSCTL_PRGPIO_R & 0X03) != 0X03);    // waiting until execution of enabling clock
 	
 	//step2 configure the pins we will use
 	GPIO_PORTA_DIR_R |=0xE0; // configure A5,A6,A7  as output   (RS,RW,E)
-	GPIO_PORTA_DEN_R |=0xE0;	// configure A5,A6,A7  as digital  (RS,RW,E)
+	GPIO_PORTA_DEN_R |=0xE0; // configure A5,A6,A7  as digital  (RS,RW,E)
 	
 	GPIO_PORTB_DIR_R |=0xFF; // configure B0,B1,B2,B3,B4,B5,B6,B7  as output     (D0,D1,D2,D3,D4,D5,D6,D7)
 	GPIO_PORTB_DEN_R |=0xFF; // configure B0,B1,B2,B3,B4,B5,B6,B7  as digital    (D0,D1,D2,D3,D4,D5,D6,D7)
