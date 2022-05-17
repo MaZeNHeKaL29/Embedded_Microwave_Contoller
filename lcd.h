@@ -1,6 +1,4 @@
 
-
-
 /////////////////symbolic names for LCD commands////////////////
 #define clear_display              0x01 
 #define returnHome                 0x02 
