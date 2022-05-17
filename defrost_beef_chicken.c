@@ -6,14 +6,8 @@
 #include "functions_prototype.h"
 
 /*
-
-
-
 BEEF STATE
-
 CHICKEN STATE
-
-
 */
 
 //function to enter no. of kilo of the beef of chicken
