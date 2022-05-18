@@ -1,0 +1,15 @@
+/* LCD */
+		    VSS    VDD     V0 		                RS      RW     E      D0    D1    D2    D3    D4    D5    D6    D7    VBUS    GND
+		    GND    VBUS    V_POTENTIONMETER_10KOHM  PA5     A6    PA7    PB0   PB1   PB2   PB3   PB4   PB5   PB6   PB7   A       K	
+		    
+/* Buzzer */		
+		    positive terminal => PA2
+		    negative terminal => GND
+		    
+/* Switch */
+		    terminal => PA3
+		    terminal => GND
+		    
+/* KeyPad */	
+		    R1 - R4 : Pins E0 - E4
+   		    C1 - C4 : Pins D0 - D4
